@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
   </head>
   <body>
     <header>
@@ -13,15 +13,41 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Add input for name - required and validate -->
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+        <!-- Add input for email - required and validate -->
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <!-- Drop down list of 3 colours (green, blue, red) - required -->
+        <label for="colour">Choose a colour:</label>
+        <select name="colour" id="colour" required>
+          <option value="" disabled selected>Select a colour</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+        <!-- Drop down list of 6 sizes (XS, S, M, L, XL, XXL) - required -->
+        <label for="size">Choose a size:</label>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Martin Mwaka</p>
     </footer>
   </body>
 </html>
