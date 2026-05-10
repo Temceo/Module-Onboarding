@@ -6,43 +6,52 @@
     <title>My form exercise</title>
     <meta name="description" content="" >
     <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- Add input for name - required and validate -->
-        <label>
-          Name
-          <input type="text" name="name" required>
-        </label>
-        <label>
+      <form> 
+        <div class="form-group">
+           <!-- Add input for name - required and validate -->
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Joe Bloggs" required>
+        </div>
+        <div class="form-group">
         <!-- Add input for email - required and validate -->
-          Email
-          <input type="email" name="email" required>
-        </label>
-        <!-- Drop down list of 3 colours (green, blue, red) - required -->
-        <label for="colour">Choose a colour:</label>
-        <select name="colour" id="colour" required>
-          <option value="" disabled selected>Select a colour</option>
-          <option value="red">Red</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-        </select>
-        <!-- Drop down list of 6 sizes (XS, S, M, L, XL, XXL) - required -->
-        <label for="size">Choose a size:</label>
-        <select name="size" id="size" required>
-          <option value="" disabled selected>Select a size</option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
-        </select>
-        <button type="submit">Submit</button>
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <!-- Drop down list of 3 colours (green, blue, red) - required -->
+          <label for="colour">Choose a colour:</label>
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>Select a colour</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+
+       <div class="form-group">
+         <!-- Drop down list of 6 sizes (XS, S, M, L, XL, XXL) - required -->
+          <label for="size">Choose a size:</label>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Select a size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+       </div>
+        <button type="submit" id="submit-btn">Submit</button>
       </form>
     </main>
     <footer>
