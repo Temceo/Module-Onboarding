@@ -34,7 +34,7 @@ input, select {
 
 form button {
   text-transform: uppercase;
-  background-color: var(--clr-bg-accent2);
+  background-color: var(--clr-bg-dark1);
   color: var(--clr-font-base);
   font-weight: 500;
   margin-top: 1rem;
@@ -51,12 +51,12 @@ form button {
 }
 
 form button:hover {
-  background-color: var(--clr-bg-accent3);
+  background-color: var(--clr-bg-accent1);
 }
 
 form {
   display: grid;
-  min-width: 350px;
+  min-width: 0px;
   gap: 1rem;
   background-color: var(--clr-bg-base);
   padding: 2rem;
