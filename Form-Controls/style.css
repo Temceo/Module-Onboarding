@@ -3,32 +3,62 @@
   margin: 0;
 }
 
+:root {
+  /* font colours */
+  --clr-font-base: #DCE1DE;
+  /* background colours */
+  --clr-bg-base: #216869;
+  --clr-bg-accent1: #3B8C88; /* 20% lighter */
+  --clr-bg-accent2: #55AFAF; /* 40% lighter */
+  --clr-bg-accent3: #70D2D2; /* 60% lighter */
+  --clr-bg-dark1: #1A5354; /* 40% darker */
+}
+
 input,
 button,
-select,
-textarea {
+select {
   font: inherit;
 }
 
-input {
+label {
+  text-transform: uppercase;
+  color: var(--clr-font-base);
+  font-weight: 500;
+}
+
+input, select {
   width: 100%;
-  /* height: 3rem; */
+  height: 2rem;
+  background-color: var(--clr-bg-accent2);
 }
 
 form button {
+  text-transform: uppercase;
+  background-color: var(--clr-bg-accent2);
+  color: var(--clr-font-base);
+  font-weight: 500;
   margin-top: 1rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
   grid-column: 1 / -1;
   justify-self: center;
   width: 100%;
+
   @media(width > 550px) {
     width: 50%;
   }
 }
 
+form button:hover {
+  background-color: var(--clr-bg-accent3);
+}
+
 form {
   display: grid;
+  min-width: 350px;
   gap: 1rem;
-  border: 2px solid green;
+  background-color: var(--clr-bg-base);
   padding: 2rem;
   border-radius: 10px;
 
@@ -49,8 +79,8 @@ form {
 
 body {
   font-family: "Poppins", sans-serif;
-  /* font-weight: 00; */
   font-style: normal;
+  background-color: var(--clr-bg-accent3);
 }
 
 main, header, footer {
