@@ -16,9 +16,15 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+html {
+  font-size: 18px;
+  line-height: 1.2;
+}
 :root {
   --font-primary: "Roboto", sans-serif;
   --clr-primary: #f5f5f5;
+  --clr-accent1: #BEBFC5;
+  --clr-accent2: #DBD7D2;
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
@@ -101,5 +107,15 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+article a {
+  background-color: var(--clr-accent1);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+article a:hover {
+   background-color: var(--clr-accent2);
 }
 
