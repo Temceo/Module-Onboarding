@@ -26,7 +26,7 @@ html {
   --clr-accent1: #BEBFC5;
   --clr-accent2: #DBD7D2;
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink: #333333;
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid #F5F5F5;
@@ -110,6 +110,7 @@ article {
 }
 
 article a {
+  font-weight: 600;
   background-color: var(--clr-accent1);
   text-transform: uppercase;
   text-decoration: none;
